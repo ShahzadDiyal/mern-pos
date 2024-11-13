@@ -1,5 +1,6 @@
 {
-  "name": "idurar-erp-crm",
+  "homepage": "https://ShahzadDiyal.github.io/mern-project",
+  "name": "pos",
   "version": "4.1.0",
   "engines": {
     "node": "20.9.0",
@@ -28,11 +29,15 @@
     "vite": "^5.4.8"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite", 
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "dev:remote": "cross-env VITE_DEV_REMOTE=remote npm run dev"
+    "test": "vite test", 
+    "eject": "react-scripts eject", 
+    "predeploy": "npm run build",  
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0", 
+    "preview": "vite preview", 
+    "dev:remote": "cross-env VITE_DEV_REMOTE=remote npm run dev" 
   },
   "devDependencies": {
     "@types/react": "^18.2.38",
@@ -41,6 +46,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "prettier": "3.1.0"
+    "prettier": "3.1.0",
+    "gh-pages": "^3.2.3"
   }
 }
